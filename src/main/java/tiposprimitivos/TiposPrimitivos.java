@@ -1,13 +1,16 @@
 
 package tiposprimitivos;
 
+import java.util.Scanner;
+
 public class TiposPrimitivos {
 
 
     public static void main(String[] args) {
 
-        String nome = "Daniel Oliveira";
-        float nota = 8.5f;
+        Scanner teclado = new Scanner(System.in);
+        String nome = teclado.nextLine();
+        float nota = teclado.nextFloat();
 
         System.out.printf("A nota de %s é %.1f", nome, nota);
 
